@@ -12,7 +12,7 @@ public class MyConnection {
     public static Connection getConnection(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc?useSSL=false", "root", "1@mAkash");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc?useSSL=false", "root", "Password");
 
         } catch (Exception e) {
             throw new RuntimeException(e);
